@@ -23,7 +23,8 @@ p{
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 20px;
+    gap: 30px;
+    flex-wrap: wrap;
     
     
 }
@@ -35,8 +36,20 @@ p{
     text-align: center;
     height: 500px;
     padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 30%;
+    
 
 
+}
+
+.card-item:hover{
+
+    transform: scale(1.1);
+    transition: 500ms;
 }
 
 .icone{
@@ -45,7 +58,12 @@ p{
 
     font-size: 50px;
     color: #dc143c;
-    margin: 30px 0;
+    margin-bottom: 30px;
+}
+
+.icone:hover{
+    transform: rotate(360deg);
+    transition: 1s;
 }
 
 .card-item h2{
@@ -58,4 +76,30 @@ p{
 
     font-weight: 500;
     margin-bottom:30px;
+}
+
+.btn{
+
+
+    text-decoration: none;
+    border: 2px solid #db143c;
+    color: #FFF;
+    background-color: #db143c;
+    font-weight: 800;
+    padding: 8px 30px;
+    border-radius: 70px;
+    transition: 500ms;
+}
+
+.btn:hover{
+
+    background-color: transparent;
+    color: #db143c;
+}
+
+@media(max-width:1024px){
+.card-item{
+    width: 80%;
+}
+
 }
